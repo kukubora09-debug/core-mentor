@@ -6,12 +6,22 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Outfit', 'sans-serif'],
+      },
       colors: {
         brand: {
-          blue: '#1e40af', // Trust Blue
-          dark: '#111827', // Dark Grey
-          light: '#f3f4f6', // Light Background
+          dark: '#0B1120',      // Deepest Navy (Backgrounds)
+          primary: '#2563EB',   // Vibrant Blue (Buttons)
+          accent: '#F59E0B',    // Gold (Trust/Premium)
+          surface: '#1E293B',   // Lighter Navy (Cards)
+          light: '#F8FAFC',     // Clean White/Grey
         }
+      },
+      boxShadow: {
+        'glow': '0 0 20px rgba(37, 99, 235, 0.5)',
+        'card': '0 10px 30px -10px rgba(0, 0, 0, 0.1)',
       }
     },
   },
